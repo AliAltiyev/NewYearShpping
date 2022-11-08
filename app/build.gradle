@@ -8,12 +8,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.altyyev.shoplist"
         minSdk 26
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -33,10 +33,13 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
-    implementation 'com.github.yusufonderd:StateLayout:0.1.1'
     def hilt_version = '2.42'
     def nav_version = "2.5.2"
     def roomVersion = "2.4.3"
@@ -96,9 +99,6 @@ dependencies {
     annotationProcessor("androidx.room:room-compiler:$roomVersion")
     implementation("androidx.room:room-ktx:$roomVersion")
     kapt("androidx.room:room-compiler:$roomVersion")
-
-    //Custom State Layout
-    implementation 'com.github.yusufonderd:StateLayout:0.1.1'
 
     //DataStore
     implementation "androidx.datastore:datastore-preferences:1.1.0-dev01"
