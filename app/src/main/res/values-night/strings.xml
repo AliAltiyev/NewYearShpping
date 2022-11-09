@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="Add">Add</string>
+	<string name="Premium">Premium</string>
+	<string name="Settings">Settings</string>
+	<string name="List">List</string>
 </resources>
