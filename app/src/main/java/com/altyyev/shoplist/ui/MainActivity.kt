@@ -5,8 +5,9 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.altyyev.shoplist.R
 import com.altyyev.shoplist.databinding.ActivityMainBinding
+import com.altyyev.shoplist.ui.fragment.NoteFragment
+import com.altyyev.shoplist.utils.FragmentManager
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.activity_main.*
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
@@ -29,10 +30,10 @@ class MainActivity : AppCompatActivity() {
                     Log.d("log", "add selected")
                 }
                 R.id.settings -> {
-                    Log.d("log", "add selected")
+
                 }
                 R.id.note -> {
-                    Log.d("log", "add selected")
+                    FragmentManager.setFragment(NoteFragment.newInstance(), this@MainActivity)
                 }
             }
             true

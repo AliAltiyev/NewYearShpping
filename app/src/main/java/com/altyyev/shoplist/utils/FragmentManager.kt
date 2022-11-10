@@ -11,7 +11,7 @@ object FragmentManager {
     fun setFragment(fragment: BaseFragment, activity: AppCompatActivity) {
         val transaction = activity.supportFragmentManager.beginTransaction()
         transaction.replace(R.id.placeholder, fragment)
-        transaction.commitNow()
+        transaction.commit()
         currentFragment = fragment
     }
 

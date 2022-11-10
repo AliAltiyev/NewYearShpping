@@ -14,5 +14,4 @@ import com.altyyev.shoplist.utils.DATABASE_VERSION
 )
 abstract class ApplicationDatabase : RoomDatabase() {
     abstract val dao: Dao
-
 }

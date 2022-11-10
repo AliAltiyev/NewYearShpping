@@ -1,3 +1,5 @@
+package com.altyyev.shoplist.base
+
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
