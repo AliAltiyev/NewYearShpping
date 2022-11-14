@@ -1,10 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">ShopList</string>
 	<string name="Add">Add</string>
 	<string name="Premium">Premium</string>
-	<string name="Note">Note</string>
 	<string name="Settings">Settings</string>
 	<string name="List">List</string>
 	<string name="title">Title</string>
-	<string name="description">Description</string>
 </resources>
