@@ -9,5 +9,6 @@
 	<color name="white">#FFFFFFFF</color>
 	//Custom colors
 	<color name="main_green">#374709</color>
+	<color name="note_activity_background_color">#95d5b2</color>
 
 </resources>

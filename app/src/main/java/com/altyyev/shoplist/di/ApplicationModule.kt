@@ -3,6 +3,7 @@ package com.altyyev.shoplist.di
 import android.content.Context
 import androidx.room.Room
 import com.altyyev.shoplist.data.ApplicationDatabase
+import com.altyyev.shoplist.data.MapperImpl
 import com.altyyev.shoplist.utils.DATABASE_NAME
 import dagger.Module
 import dagger.Provides
@@ -27,4 +28,10 @@ object ApplicationModule {
     @Singleton
     @Provides
     fun provideDao(applicationDatabase: ApplicationDatabase) = applicationDatabase.dao
+
+
+    @Singleton
+    @Provides
+    fun provideMapper(mapperImpl: MapperImpl) = mapperImpl
+
 }

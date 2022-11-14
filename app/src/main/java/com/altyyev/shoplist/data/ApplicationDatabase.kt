@@ -2,14 +2,14 @@ package com.altyyev.shoplist.data
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.altyyev.shoplist.entity.NoteItem
-import com.altyyev.shoplist.entity.ShopListItem
-import com.altyyev.shoplist.entity.ShopListNames
-import com.altyyev.shoplist.entity.TextHelperLibraryItem
+import com.altyyev.shoplist.data.entity.NoteItemRoomModel
+import com.altyyev.shoplist.data.entity.ShopListItemRoomModel
+import com.altyyev.shoplist.data.entity.ShopListNamesRoomModel
+import com.altyyev.shoplist.data.entity.TextHelperLibraryItemModel
 import com.altyyev.shoplist.utils.DATABASE_VERSION
 
 @Database(
-    entities = [NoteItem::class, ShopListItem::class, ShopListNames::class, TextHelperLibraryItem::class],
+    entities = [NoteItemRoomModel::class, ShopListItemRoomModel::class, ShopListNamesRoomModel::class, TextHelperLibraryItemModel::class],
     version = DATABASE_VERSION
 )
 abstract class ApplicationDatabase : RoomDatabase() {

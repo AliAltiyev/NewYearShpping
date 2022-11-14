@@ -1,10 +1,12 @@
 package com.altyyev.shoplist.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.altyyev.shoplist.R
 import com.altyyev.shoplist.databinding.ActivityMainBinding
+import com.altyyev.shoplist.ui.activity.NewNoteActivity
 import com.altyyev.shoplist.ui.fragment.NoteFragment
 import com.altyyev.shoplist.utils.FragmentManager
 import dagger.hilt.android.AndroidEntryPoint
@@ -37,6 +39,9 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             true
+        }
+        floatingActionBar.setOnClickListener {
+            startActivity(Intent(this@MainActivity, NewNoteActivity::class.java))
         }
     }
 

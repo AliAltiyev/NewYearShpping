@@ -1,11 +1,11 @@
-package com.altyyev.shoplist.entity
+package com.altyyev.shoplist.data.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "noteItem")
-data class NoteItem(
+data class NoteItemRoomModel(
     @PrimaryKey(autoGenerate = true)
     val id: Int?,
     @ColumnInfo(name = "title")

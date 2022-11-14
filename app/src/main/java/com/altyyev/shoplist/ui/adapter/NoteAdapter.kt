@@ -5,9 +5,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.altyyev.shoplist.R
 import com.altyyev.shoplist.base.BaseAdapter
-import com.altyyev.shoplist.entity.NoteItem
+import com.altyyev.shoplist.data.entity.NoteItemRoomModel
 
-class NoteAdapter() : BaseAdapter<NoteItem>(
+class NoteAdapter() : BaseAdapter<NoteItemRoomModel>(
     itemsSame = { old, new -> old.id == new.id },
     contentsSame = { old, new -> old == new }
 ) {

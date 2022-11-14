@@ -20,6 +20,7 @@
 		android:backgroundTint="@color/white"
 		android:isScrollContainer="false"
 		android:pointerIcon="zoom_in"
+		android:id="@+id/floating_action_bar"
 		android:src="@drawable/ic_add"
 		android:tint="#FFFFFF"
 		app:backgroundTint="#4CAF50"

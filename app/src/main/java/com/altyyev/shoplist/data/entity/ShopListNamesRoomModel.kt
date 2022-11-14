@@ -1,4 +1,4 @@
-package com.altyyev.shoplist.entity
+package com.altyyev.shoplist.data.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 import java.io.Serializable
 
 @Entity(tableName = "shopListNames")
-data class ShopListNames(
+data class ShopListNamesRoomModel(
     @PrimaryKey(autoGenerate = true)
     val id: Int?,
     @ColumnInfo(name = "name")
